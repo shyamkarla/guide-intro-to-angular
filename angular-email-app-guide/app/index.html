@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS email app</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+  </head>
+  <body>
+
+    <header class="header" role="banner">
+      <div class="wrapper">
+        <div class="header__text">
+          <img src="img/logo.png">
+          <p>
+            Email application
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <div class="wrapper">
+        <div ng-view></div>
+      </div>
+    </main>
+
+    <script src="lib/jquery-v1.11.1.js"></script>
+    <script src="lib/angular-v1.3.0-beta.7.js"></script>
+    <script src="lib/angular-v1.3.0-route-beta.7.js"></script>
+    <script src="lib/angular-v1.3.0-sanitize-beta.7.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers/InboxCtrl.js"></script>
+    <script src="js/controllers/EmailCtrl.js"></script>
+    <script src="js/factory/InboxFactory.js"></script>
+    <script src="js/factory/EmailFactory.js"></script>
+    <script src="js/directives/Inbox.js"></script>
+    <script src="js/directives/Email.js"></script>
+
+  </body>
+</html>
