@@ -1,7 +1,8 @@
 /**
  * Directive: Email <email></email>
  */
-app.directive('email', function email () {
+
+angular.module('app').directive('email', function email () {
 
   'use strict';
 

@@ -1,7 +1,8 @@
 /**
  * Directive: Inbox <inbox></inbox>
  */
-app.directive('inbox', function inbox () {
+
+angular.module('app').directive('inbox', function inbox () {
 
   'use strict';
 
