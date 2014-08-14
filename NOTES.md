@@ -50,10 +50,9 @@ Large Sections:
         - it's javascript scope & dependency management 
     - Notice the empty array, here it's being used as a setter
     - ENCOURAGE GLOBAL MyModule Var???
-        - discouraged here
-            https://github.com/mgechev/angularjs-style-guide
-            and
-            https://github.com/johnpapa/angularjs-styleguide
+
+discouraged here https://github.com/mgechev/angularjs-style-guide
+and here https://github.com/johnpapa/angularjs-styleguide
 
 06 - routing
 
@@ -63,17 +62,16 @@ Large Sections:
 07 - controllers
 
     - Dogmatic suggestion of using 'this' instead of $scope
-        - disagreement here:
-            http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
-        - heated topic in my opinion... worth showing benefits of both
-            - this is good for exposing API methods to directives
-            - this is bad for exposing API methods to child controllers
-                - but this should be avoided anyway
-            - can use scope to expose API methods to child controllers
-            - so many ways to guide this communication such as 
-                - 'require'
-                - 'scope: { '&@=' },
-                - using calls directly in views on parent scopes.
+disagreement here: http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
+    - heated topic in my opinion... worth showing benefits of both
+        - this is good for exposing API methods to directives
+        - this is bad for exposing API methods to child controllers
+            - but this should be avoided anyway
+        - can use scope to expose API methods to child controllers
+        - so many ways to guide this communication such as 
+            - 'require'
+            - 'scope: { '&@=' },
+            - using calls directly in views on parent scopes.
 
 08 - factory
 
