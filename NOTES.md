@@ -35,10 +35,36 @@ THATS A GATEWAY. MODELS ARE BUSINESS OBJECTS
 
     - could use an NG-VIEW / routes section
 
-04 - changed name of this, avoiding word dependencies to keep the idea of dependencies clear for DI
+04 - DEPS - changed name of this, avoiding word dependencies to keep the idea of dependencies clear for DI
 
+    - should we be using the beta?? better to use stable maybe? / it's what's supported by testing frameworks etc.
 
+    - don't necessarily need the jQuery for this application either.
 
+05 - Module - it's not just 'namespacing' though really... 
+        - it's javascript scope & dependency management 
+    - Notice the empty array, here it's being used as a setter
+    
+    - ENCOURAGE GLOBAL MyModule Var???
+        - discouraged here
+            https://github.com/mgechev/angularjs-style-guide
+            and
+            https://github.com/johnpapa/angularjs-styleguide
 
+06 - routing
+    - config isn't a module, it's a function
+
+    - using dependency injection here without explaining it
+
+07 - controllers
+    - Dogmatic suggestion of using 'this' instead of $scope
+        - disagreement here:
+            http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
+        - heated topic in my opinion... worth showing benefits of both
+            - this is good for exposing API methods to directives
+            - this is bad for exposing API methods to child controllers
+                - but this should be avoided anyway
+            - can use scope to expose API methods to child controllers
+            - so many ways to guide this communication such as 'require', 'scope: { '&' }, using calls directly in views.
 
 
