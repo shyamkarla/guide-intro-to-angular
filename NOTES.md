@@ -65,6 +65,30 @@ THATS A GATEWAY. MODELS ARE BUSINESS OBJECTS
             - this is bad for exposing API methods to child controllers
                 - but this should be avoided anyway
             - can use scope to expose API methods to child controllers
-            - so many ways to guide this communication such as 'require', 'scope: { '&' }, using calls directly in views.
+            - so many ways to guide this communication such as 
+                - 'require'
+                - 'scope: { '&@=' },
+                - using calls directly in views on parent scopes.
+
+08 - factory
+    - 'think of them as a provider' ? whats a provider
+        - seems to narrow their scope a little.. they can be anything!
+            - alert management, state controls, loggers, analytics, notifications, complete functional operations not tied to business objects, all sorts!
+
+    - talking too much about persistence!  [ GRRR everyone just wants to h**p their DB all the time. ]
+
+    - exports object / seems like a very (this is the way I do it)
+        - kinda makes something explicit and helpful for node people potentially
+        - not necessary/ good or bad practice?  not sure
+
+    - good to talk about closures in factories for private variables?
+
+    - $http isn't jQuery-like at all really... it's a promise with 2 sugar methods
+
+    - seems like theirs no point in the $q here... $http returns almost exactly the same thing but with more information...
+
+    - json file IS an endpoint... wouldn't necessarily be a restful endpoint though ±_±
+
+09 - hooking up the factory
 
 
