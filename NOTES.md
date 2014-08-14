@@ -1,4 +1,4 @@
-Large Sections:
+## Large Sections Need Splitting Up
 * 03-setup
 * 06-routing
 * 08-factory
@@ -6,7 +6,7 @@ Large Sections:
 * 13-view templating
 * 14-DI
 
-## App
+## Concerns in the App
 ### directives
 - make a module_title directive for string templates
 - move the GIANT string templates into view files
@@ -21,7 +21,7 @@ Large Sections:
 - why are there blocking alerts??
 - remove dollar sign on link functions too.
 
-## Sections
+## Concerns in the Sections
 
 01 - intro
 
