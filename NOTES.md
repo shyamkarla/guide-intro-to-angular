@@ -63,6 +63,7 @@ and here https://github.com/johnpapa/angularjs-styleguide
 
     - Dogmatic suggestion of using 'this' instead of $scope
 disagreement here: http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
+    
     - heated topic in my opinion... worth showing benefits of both
         - this is good for exposing API methods to directives
         - this is bad for exposing API methods to child controllers
