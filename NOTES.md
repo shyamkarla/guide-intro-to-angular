@@ -30,59 +30,58 @@
 
 01 - intro
 
-* MODELS ARE NOT SERVER COMMUNICATION ARGGGHHHH!!!!!!!! THATS A GATEWAY. MODELS ARE BUSINESS OBJECTS
+* MODELS ARE NOT SERVER COMMUNICATION ARGGGHHHH!!!!!!!! THATS A GATEWAY. MODELS ARE BUSINESS OBJECTS </calming down> (I see people encourage this a lot and find it very detrimental to teams I've worked in; I'm not alone in this experience either... databases break, business objects don't! :)
 
 02 - data-binding
 
-* do we need two way data binding explained so early?? it just comes from nowhere in the article.
+* do we need two way data binding explained so early?? it just comes from nowhere in the article. (removed from modified content)
 
 03 - setup
 
-* dives straight into ng-view in example, talks about controller but doesn't explain it.
-* should explain scope
+* article dives straight into ng-view in example, talks about controller but doesn't explain it. lots unanswered!
+* should explain scope here instead (vital to angular)
     * app scope / controller scope
-* could use an NG-VIEW / routes section
+* could use separate section for ng-view & routes section (added to modified content whilst removing other blabber)
 
 04 - DEPS 
 
-* changed name of this, avoiding word dependencies to keep the idea of dependencies clear for DI
-* should we be using the beta?? better to use stable maybe? / it's what's supported by testing frameworks etc.
-* don't necessarily need the jQuery for this application either.
+* changed name of this section, think it's best to avoid using the word 'dependency' when talking about js files and to keep the idea of dependencies clear for DI as it's important for angular.
+* should we be using the angular beta version?? better to use stable maybe? / it's what's supported by testing frameworks / component libraries / etc.
+* don't necessarily need jQuery for this application either. worth talking about but adds nothing to project.
 
 05 - Module
 
-* it's not just 'namespacing' though really... 
-    * it's javascript scope & dependency management 
-* Notice the empty array, here it's being used as a setter
-* ENCOURAGE GLOBAL MyModule Var???
+* modules are not just 'namespacing'... 
+    * they're application sub scope & dependency management 
+* ENCOURAGE GLOBAL MyModule Var??? hmmmm...
 
 discouraged here https://github.com/mgechev/angularjs-style-guide
 and here https://github.com/johnpapa/angularjs-styleguide
 
 06 - routing
 
-* config isn't a module, it's a function
+* config() isn't a module, it's a function
 * using dependency injection here without explaining it
 
 07 - controllers
 
 * Dogmatic suggestion of using 'this' instead of $scope
-disagreement here: http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
+
+there's a valid disagreement here: http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
     
-* heated topic in my opinion... worth showing benefits of both
-    * this is good for exposing API methods to directives
-    * this is bad for exposing API methods to child controllers
-        * but this should be avoided anyway
-    * can use scope to expose API methods to child controllers
-    * so many ways to guide this scope communication such as 
-        * 'require' and ctrl in directive - 'this' only
-        * 'scope: { '&@=' }, in directive
-        * call on parent $scope directly in views of nested controllers
-        * using the ctrl as inside nested views on controllers
+* it's a heated topic in my opinion... worth showing benefits of both instead of being so dogmatic
+    * 'this' is good for exposing API methods to other directives
+    * don't want everything exposed though, scope is good for private
+    * scope is also where $apply/$watch/forms/etc.. live
+    * so many ways to guide this inter-scope-communication such as: 
+        * 'require' and ctrl in directive ('this' only)
+        * 'scope: { '&@=' }, in directive (both)
+        * call on parent $scope directly in views of nested controllers (scope)
+        * using the ctrl as inside nested views on controllers (this)
 
 08 - factory
 
-* 'think of them as a provider' but whats a provider, never explained..
+* 'think of them as a provider' but whats a provider, it's never explained..
     * seems to narrow their scope a little.. they can be anything!
         * alert management, state controls, loggers, analytics, notifications, complete functional operations not tied to business objects, all sorts!
 * talking too much about persistence!  [ GRRR everyone just wants to h**p their DB all the time. ]
