@@ -2,7 +2,7 @@
 
 I find that when learning a new framework, it's helps to have something working as soon as possible, so you can start playing around and digging into what does what!
 
-So, when setting up your Angular application, the first thing you will need to do is tell it where to go! But before we do this, we should have a chat about scopes and our first two directives; `ng-app` and `ng-controller`.
+So, when setting up your Angular application, the first thing you will need to do is tell it where to go! But before we do this, we should have a chat about scopes and our first two directives: `ng-app` and `ng-controller`.
 
 ### Scopes
 
