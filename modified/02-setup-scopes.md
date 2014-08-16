@@ -8,10 +8,10 @@ So, when setting up your Angular application, the first thing you will need to d
 
 One of the most fundamental parts of Angular, is it's scopes.  They hold your Models, they cooperate with your Controllers and they give the Views everything they need!  They operate in a very similar way to the common programming language concept of scope.
 
-The first scope we will need is the application scope, this is exactly what it says on the tin: the scope that your Angular application can operate in. We set this up in our HTML using the `ng-app` attribute. Here we have said that our app (module) with a name of `'app'` will be usable in our whole html file.
+The first scope we will need is the application scope, this is exactly what it says on the tin: the scope that your Angular application can operate in. We set this up in our HTML using the `ng-app` attribute. Below we have said that our app (module) with a name of `'myApp'` will be usable in our whole html file.
 
 ```html
-<html ng-app="app">
+<html ng-app="myApp">
     <head></head>
     <body></body>
 </html>

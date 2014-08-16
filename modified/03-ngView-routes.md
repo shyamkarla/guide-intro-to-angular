@@ -3,7 +3,7 @@
 Another important building block that can connect certain URLs of our application to scopes is the `ng-view` directive.
 
 ```html
-<html ng-app="app">
+<html ng-app="myApp">
     <head>
     </head>
     <body>

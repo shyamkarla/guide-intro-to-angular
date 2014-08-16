@@ -4,13 +4,13 @@ Angular Factories can be used for all kinds of situations; some of the most comm
 
 In other words, if you want to communicate with a RESTful API, do it through a factory!  If you want to store a 'CurrentUser' with authentication information, do it in a factory!
 
-###### Note:  You may have heard of factories as a design pattern but Angular factories are different.
+###### Note:  You may have heard of factories as a design pattern in many programming languages, but Angular's factories are different to those in practice (maybe not in spirit :).
 
 You can create a factory using the `angular.factory()` method like so:
 
 ```js
 app.factory('ExampleFactory', function ExampleFactory($rootScope, $http, $location) {
-  return myReusableFunction(){
+  return function myReusableFunction(){
     // do something fancy
   };
 });
@@ -35,29 +35,7 @@ app.factory('InboxFactory', function InboxFactory ($http) {
 });
 ```
 
-## $http
+### $http
 
-This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error through chaining onto the $http promise.  Yes that's right, `$http()` returns a promise, so we can use all of the Angular promise API the same as $q object with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
+This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the promise returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the Angular promise API, the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
 
-## Promises and $q
-
-NEED LINK TO HTTP AND SUCCESS
-
-NEED LINK TO PROMISES INFORMATION
-
-## Hooking up the Factory and Controller
-
-We've got some basic email data inside a Factory setup, and a Controller, so let's connect the two:
-
-```js
-app.controller('InboxCtrl', function ($scope, InboxFactory) {
-  InboxFactory.getMessages()
-    .success(function(jsonData, statusCode){
-      console.log('The request was successful!', statusCode, jsonData);
-      // Now add the Email messages to the controller's scope
-      $scope.emails = jsonData;
-    });
-});
-```
-
-See how the factory is available as an injectable in our controller?  We then call the `getMessages` method on the factory and using the `$http` promise's `success` method, we can add the list of Emails/messages to our controller's `$scope` and use it in the view.
