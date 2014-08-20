@@ -25,6 +25,9 @@
 - remove dollar sign on link functions too.
 
 ----
+#### further readings:
+Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angular/?utm_source=javascriptweekly&utm_medium=email
+----
 
 ## Concerns in the Sections
 
@@ -33,6 +36,7 @@
 02 - data-binding * removed
 
 03 - setup * split into scopes and ngview
+
 
 04 - DEPS * renamed to including angular
 
