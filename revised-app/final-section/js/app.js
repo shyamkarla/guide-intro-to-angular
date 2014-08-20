@@ -11,12 +11,12 @@ angular.module('EmailApp', [
       controller: 'InboxCtrl', // map js to html scope
       controllerAs: 'inbox' // alias of the js scope in html
     })
-    .when('/inbox/email/:id', { // dynamic id
-      templateUrl: 'views/email.html',
-      controller: 'EmailCtrl',
-      controllerAs: 'email'
-    })
-    .otherwise({ // default
-      redirectTo: '/inbox'
-    });
+    // .when('/inbox/email/:id', { // dynamic id
+    //   templateUrl: 'views/email.html',
+    //   controller: 'EmailCtrl',
+    //   controllerAs: 'email'
+    // })
+    // .otherwise({ // default
+    //   redirectTo: '/inbox'
+    // });
 });

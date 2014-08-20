@@ -24,10 +24,22 @@
 - why are there blocking alerts??
 - remove dollar sign on link functions too.
 
+
+
+
+
+
 ----
+
 #### further readings:
 Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angular/?utm_source=javascriptweekly&utm_medium=email
+
+
+
+
+
 ----
+
 
 ## Concerns in the Sections
 
