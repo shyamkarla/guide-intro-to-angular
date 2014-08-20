@@ -17,7 +17,9 @@ The first scope we will need is the application scope, this is exactly what it s
 </html>
 ```
 
-The second scope is `ng-controller`, this will determine where our controller can operate!  We can have multiple controller scopes within our application.  For example we may have an `inbox.html` file, containing the below code. It will give responsibility to a controller named `'InboxCtrl'` for this scope.
+###### Note: Whilst we have no JavaScript files to configure our application, we can use ng-app without the "myApp" to declare a default app.  In other words, just `<html ng-app>`.
+
+The second scope is `ng-controller`, this will determine where our controller can operate!  We can have multiple controller scopes within our application.  For example we may have an `inbox.html` file, containing the below code. It will give responsibility to a controller named `'InboxCtrl'` (in our JavaScript) for this scope.
 
 ```html
 <div ng-controller="InboxCtrl">

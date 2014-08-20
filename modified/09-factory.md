@@ -10,9 +10,9 @@ You can create a factory using the `angular.factory()` method like so:
 
 ```js
 app.factory('ExampleFactory', function ExampleFactory($rootScope, $http, $location) {
-  return function myReusableFunction(){
-    // do something fancy
-  };
+    return function myReusableFunction(){
+        // do something fancy
+    };
 });
 ```
 
@@ -22,16 +22,16 @@ In this app, we'll need to get our messages, so let's create a function to do th
 
 ```js
 app.factory('InboxFactory', function InboxFactory ($http) {
-  var exports = {};
+    var exports = {};
+    
+    exports.getMessages = function () {
+        return $http.get('json/emails.json')
+            .error(function (data) {
+                console.log('There was an error!', data);
+            });
+    };
 
-  exports.getMessages = function () {
-    return $http.get('json/emails.json')
-        .error(function (data) {
-          console.log('There was an error!', data);
-        });
-  };
-
-  return exports;
+    return exports;
 });
 ```
 

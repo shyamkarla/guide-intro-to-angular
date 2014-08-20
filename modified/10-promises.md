@@ -11,8 +11,8 @@ The promise object itself gives us the ability to ask (similar to an event handl
 ```js
 var d = $q.defer();
 d.promise.then(
-  function whenThingsGoSunny(){},
-  function whenThingsDontDoGoSoSunny(){}
+    function whenThingsGoSunny(){},
+    function whenThingsDontDoGoSoSunny(){}
 )
 ```
 
@@ -30,12 +30,12 @@ We've got some basic email data inside a Factory setup, and a Controller, so let
 
 ```js
 app.controller('InboxCtrl', function ($scope, InboxFactory) {
-  InboxFactory.getMessages()
-    .success(function(jsonData, statusCode){
-      console.log('The request was successful!', statusCode, jsonData);
-      // Now add the Email messages to the controller's scope
-      $scope.emails = jsonData;
-    });
+    InboxFactory.getMessages()
+        .success(function(jsonData, statusCode){
+            console.log('The request was successful!', statusCode, jsonData);
+            // Now add the Email messages to the controller's scope
+            $scope.emails = jsonData;
+        });
 });
 ```
 

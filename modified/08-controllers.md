@@ -36,4 +36,6 @@ And we can use this like so:
 </div>
 ```
 
+###### Note: Here we're accessing the title directly, however it is encouraged to always have at least one dot (.) in our view expression properties.  Using the "controller as" with `this` syntax would solve this giving us the `.` like so `{{ inbox.title }}`.
+
 In order to keep our controllers more reusable, we would hook up data in our controller via a Factory or Service.

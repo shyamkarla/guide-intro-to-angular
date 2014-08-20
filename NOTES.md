@@ -47,13 +47,14 @@ Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angula
 
 02 - data-binding * removed
 
-03 - setup * split into scopes and ngview
+// moved the inclusion of angular to earlier so each step will keep working
 
+03 - setup * split into scopes and ngview
 
 04 - DEPS * renamed to including angular
 
-* should we be using the angular beta version?? better to use stable maybe? / it's what's supported by testing frameworks / component libraries / etc.
-* don't necessarily need jQuery for this application either. worth talking about but adds nothing to project.
+* using stable version : it's what's supported by testing frameworks / component libraries / etc.
+* don't necessarily need jQuery for this application either. worth talking about but adds nothing to project. leaving it in anyway though
 
 05 - Module * remove global suggestion
 
@@ -77,18 +78,27 @@ http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controlle
 
 08 - factory * removed persistence
 
-Need to think about this more, might be worth explaining promises and or http in their own section!
+Maybe split HTTP into another setion
+
+Adding a section for promises
 
 09 - hooking up the factory
 
 * Might be worth mentioning dependency injection here again... quite a big feature should be understood or it's like.. Where did InboxFactory come from?
 * tiny section could just be a sub section?
 
+* Moved the view information 'title' out of the file that does the $http.... WOW
+
+///
+*  Include bad practice on purpose for the sake of introducing directives
+
 10 - templating and directives
 
 * this is 2 large subjects... split them up??
 * view templating section is at part 13, probably worth doing here instead... it's like the first thing you do in the official angular tutorial.
 * 
+
+
 
 
 
