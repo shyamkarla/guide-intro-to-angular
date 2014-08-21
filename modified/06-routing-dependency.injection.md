@@ -34,7 +34,7 @@ Angular modules each have a `.config()` function, we give this a callback that i
 app.config(function () { /*...*/ });
 ```
 
-## Dependency Injection
+### Dependency Injection
 
 We'll need to use the `$routeProvider` to setup our routes inside the config callback; this is made possible via some magic inside the Angular framework (using function definitions and regex).  We can simply accept `$routeProvider` as an argument to the config function and Angular will understand that we've asked for it.
 

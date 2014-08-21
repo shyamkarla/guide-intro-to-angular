@@ -1,10 +1,41 @@
+#### Glossary:
+Article - MD file to be converted to HTML
+Section - part of the article
+App - The working project (source files)
+Stage - Point in the apps growth including source files
+
 ## Large Sections Need Splitting Up
-* 03-setup
-* 06-routing
-* 08-factory
+
+* 08-factory & Promises
 * 11-templating - very big
 * 13-view templating
 * 14-DI
+
+_____
+## App downloads
+
+Inside the revised app folder there are a number of sections each showing the project at a working stage growing from 01 to final.
+
+Here is a list of the sections of the article that are appropriate for each of these stages of the project
+
+#### 01-include-angular
+- Section 2 including angular
+
+#### 02-first-controller
+- Section 8 Controllers
+
+Considering the ngView importance in this app, to get a first controller setup we need to explain sections 2 to 8 for the next pieces to work!
+
+#### 03-inbox-factory
+- Section 9 Promises
+
+Promises are a massive part of this application so they are used to explain the controller that uses the factory in section 8.
+
+
+
+
+_____
+
 
 ----
 
@@ -45,23 +76,33 @@ Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angula
 
 01 - intro
 
+
 02 - data-binding * removed
 
 // moved the inclusion of angular to earlier so each step will keep working
 
+
 03 - setup * split into scopes and ngview
+
+
 
 04 - DEPS * renamed to including angular
 
 * using stable version : it's what's supported by testing frameworks / component libraries / etc.
 * don't necessarily need jQuery for this application either. worth talking about but adds nothing to project. leaving it in anyway though
 
+
+
 05 - Module * remove global suggestion
 
 discouraged here https://github.com/mgechev/angularjs-style-guide
 and here https://github.com/johnpapa/angularjs-styleguide
 
+
+
 06 - routing * added dependency injection / config / route provider subsections
+
+
 
 07 - controllers * removed controllerAs to make things simpler
 http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
@@ -76,21 +117,28 @@ http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controlle
         * call on parent $scope directly in views of nested controllers (scope)
         * using the ctrl as inside nested views on controllers (this)
 
+
+
 08 - factory * removed persistence
 
 Maybe split HTTP into another setion
 
-Adding a section for promises
+Adding a new section for promises
+
+
 
 09 - hooking up the factory
 
-* Might be worth mentioning dependency injection here again... quite a big feature should be understood or it's like.. Where did InboxFactory come from?
-* tiny section could just be a sub section?
+* Explained \Where did InboxFactory come from?\
+* tiny section is now just a sub section for factories?
 
-* Moved the view information 'title' out of the file that does the $http.... WOW
+* Moved the view information 'title' _out_ of the file that does the $http.... WOW, now exists in the controller, where it kinda should :S Infact it could basically exist in the view REALLY.
 
 ///
 *  Include bad practice on purpose for the sake of introducing directives
+
+
+
 
 10 - templating and directives
 
@@ -98,9 +146,13 @@ Adding a section for promises
 * view templating section is at part 13, probably worth doing here instead... it's like the first thing you do in the official angular tutorial.
 * 
 
+    removed the section 13 on view tmpl and put something here instead
 
+    Tidied up the factory a little bit, no longer setting messages of factory inside the directive
+        after just invoking the factory method <face-palm> why make this coupling??
 
-
+* problem here... lots of advance view logic using ng-model, ng-hide, ng-show, ng-repeat, ng-click
+    it's not explained
 
 
 
