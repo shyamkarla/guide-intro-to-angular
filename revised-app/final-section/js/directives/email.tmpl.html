@@ -1,14 +1,8 @@
 <div class="email">
   <div class="email__info">
-    <p class="email__list-from">
-      {{ email.message.from }}
-    </p>
-    <p class="email__list-date">
-      {{ email.message.date | date: 'dd/MM/yyyy' }}
-    </p>
-    <p class="email__list-subject">
-      {{ email.message.subject }}
-    </p>
+    <p class="email__list-from"> {{ email.message.from }} </p>
+    <p class="email__list-date"> {{ email.message.date | date: 'dd/MM/yyyy' }} </p>
+    <p class="email__list-subject"> {{ email.message.subject }} </p>
     <a href="" ng-click="reply = !reply;" class="email__reply">
       Reply
     </a>

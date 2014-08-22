@@ -1,13 +1,47 @@
+## Prerequisites
+
+1. Understand how to build a JavaScript application with jQuery
+2. Have some local server setup such as http-server, python SimpleHTTPServer, php -S, XAMPP, etc...
+3. Be able to clone a github repo and change branches!
+
+### Not Covered
+
+a list of things not spoke about in the article
+
+- Talk through of the code in factories
+- Talk about services as an alternative to factories
+- Run function
+- Custom filters
+- Transclusion
+- Animation
+- resolve blocks
+- watch statements
+- angular's helpers like $window, $timeout
+- events
+- ngSanitize
+- Unit testing
+- E2E testing
+
+#### further readings
+
+Some further readings; some should be strategically placed in the content as well as relisted at the end :)
+
+Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angular/
+Debugging - http://ionicframework.com/blog/angularjs-console/
+
 #### Glossary:
+
+Terms to explain this repo.
+
 Article - MD file to be converted to HTML
 Section - part of the article
 App - The working project (source files)
 Stage - Point in the apps growth including source files
 
 _____
-## App downloads
+## App Download/Branch Points
 
-Inside the revised app folder there are a number of sections each showing the project at a working stage growing from 01 to final.
+Inside the revised app folder there are a number of folders each showing the project at a working stage growing from 01 to final-section.
 
 Here is a list of the sections of the article that are appropriate for each of these stages of the project
 
@@ -27,13 +61,12 @@ Promises are a massive part of this application so they are used to explain the 
 #### 04-first-directive
 - Section 13 the complete directive
 
+#### Final-section
+
+- The complete app to be viewed in section 17-complete-project which lists the changes at this point
 
 _____
-
-
-----
-
-## Concerns in the App
+## Concerns in the App Source Code
 
 ### directives
 - make a module_title directive for string templates
@@ -53,25 +86,15 @@ _____
 - changed directives to only restrict 'E'
 
 
-
-
-
-----
-
-#### further readings:
-Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angular/?utm_source=javascriptweekly&utm_medium=email
-
-
-
+### server command assumes unix environment (something with python installed)
+- not everyone will have a server to use for this! http-server maybe but even then!
+- can't use file:// 
 
 
 ----
-
-
 ## Concerns in the Sections
 
-01 - intro
-
+01 - intro 
 
 02 - data-binding * removed
 
@@ -181,20 +204,6 @@ This also had some content about minification of angular so use arrays of depend
 15 and 16 - cloaking and debugging
 
 * no changes (typo fix)
-
-
-
-
-#### Not Covered
-- Talk through of the code in factories
-- Talk about services as an alternative to factories
-- Run function
-- Custom filters
-- Transclusion
-- Animation
-- resolve blocks
-- watch statements
-- angular's helpers like $window, $timeout
 
 #### Worth adding
 - another directive for the views that abstracts out the title section
