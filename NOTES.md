@@ -4,37 +4,6 @@
 2. Have some local server setup such as http-server, python SimpleHTTPServer, php -S, XAMPP, etc...
 3. Be able to clone a github repo and change branches!
 
-### Not Covered
-
-a list of things not spoke about in the article
-
-- Talk through of the code in factories
-- Talk about services as an alternative to factories
-- Run function
-- Custom filters
-- Transclusion
-- Animation
-- resolve blocks
-- watch statements
-- angular's helpers like $window, $timeout
-- events
-- ngSanitize
-- Unit testing
-- E2E testing
-- minification of angular projects
-- communication between directives
-
-#### further readings
-
-Some further readings; some should be strategically placed in the content as well as relisted at the end :)
-
-Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angular/
-Debugging - http://ionicframework.com/blog/angularjs-console/
-
-*Extras*:
-Style Guides - https://github.com/mgechev/angularjs-style-guide
-and https://github.com/johnpapa/angularjs-styleguide
-
 #### Glossary:
 
 Terms to explain this repo.
