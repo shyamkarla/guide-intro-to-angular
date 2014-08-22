@@ -21,6 +21,8 @@ a list of things not spoke about in the article
 - ngSanitize
 - Unit testing
 - E2E testing
+- minification of angular projects
+- communication between directives
 
 #### further readings
 
@@ -38,8 +40,11 @@ and https://github.com/johnpapa/angularjs-styleguide
 Terms to explain this repo.
 
 Article - MD file to be converted to HTML
+
 Section - part of the article
+
 App - The working project (source files)
+
 Stage - Point in the apps growth including source files
 
 _____
@@ -70,30 +75,28 @@ Promises are a massive part of this application so they are used to explain the 
 - The complete app to be viewed in section 17-complete-project which lists the changes at this point
 
 _____
-## Concerns in the App Source Code
+## Changes in the App Source Code
 
-### directives
-- make a module_title directive for string templates
-- move the GIANT string templates into view files
-- shows both techniques
+- removed the app global
+- look for places to add custom filters
+- tidied up some indentation for consistency
+- removed the service that did nothing and wasn't explained at all
+- removed comments that just say the name of the variable on the next line o_O
+- removed the dollar sign from arguments to link functions
+- changed setTimeout to $timeout
+- changed directives to restrict 'E' as they don't make sense as attributes at all
 
-### other
-- avoid the use of a global called 'app', easy to break it/ show potential inside an IIFE.
-- look for a place the filter can be used to do something
-- tidied up some indentation on chains for readability
-- the service is pointless
-- why is routeParams inside the factories??
-- why are there blocking alerts??
-- remove dollar sign on link functions too.
-- use of setTimeout instead of $timeout bad for testing etc...
-- some problems with tight coupling between directive calling parent scope to change the title, HMM
-- changed directives to only restrict 'E'
+#### problems still in application
+- horrible coupling in the Email directive to the Email controller's message
+- why is the title being set in the controller?  Can just be in the view
+- controller might want some information, the directives seem to have FAR too many concerns!
+- should be smaller directives doing simple things and reusable, not both making http requests to json files as well as changing loading messages and owning the navigation methods as well as manipulating the data omg too much ahh!
+- routeParams in the factories and directives feels odd, easily could add resolve for this
 
-
-### server command assumes unix environment (something with python installed)
+### TODO
+- server command assumes unix environment (something with python installed)
 - not everyone will have a server to use for this! http-server maybe but even then!
-- can't use file:// 
-
+- can't use file://, need intro section to explain the repo approach we use
 
 ----
 ## Changes To Sections
@@ -165,12 +168,13 @@ http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controlle
 #### Problems
 - section 10... lots of advance view logic using ng-model, ng-hide, ng-show, ng-repeat, ng-click it's not explained in much detail
 
-#### Worth adding
+#### Worth adding to code
 - another directive for the views that abstracts out the title section
+- another controller in the index for the header section
+- better dependency management between the controller and the directives (not fudging the controller variables in the directive)
+- something about services
+- abstract the models better into services
+- use an app global on one file but place inside an IIFE
+- add some custom filters somehow?
 
-### Extras
-
-- built-in directives tutorials
-- minification of angular projects information
-- deeper into directives content talking about communication between directives, linking functions, compile functions, all the other stuff like that
 
