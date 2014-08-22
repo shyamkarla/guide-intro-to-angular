@@ -29,6 +29,10 @@ Some further readings; some should be strategically placed in the content as wel
 Scope - http://jonathancreamer.com/adding-clarity-to-scope-inheritance-in-angular/
 Debugging - http://ionicframework.com/blog/angularjs-console/
 
+*Extras*:
+Style Guides - https://github.com/mgechev/angularjs-style-guide
+and https://github.com/johnpapa/angularjs-styleguide
+
 #### Glossary:
 
 Terms to explain this repo.
@@ -92,118 +96,74 @@ _____
 
 
 ----
-## Concerns in the Sections
-
-01 - intro 
+## Changes To Sections
 
 02 - data-binding * removed
 
 // moved the inclusion of angular to earlier so each step will keep working
 
-
 03 - setup * split into scopes and ngview
 
-
-
-04 - DEPS * renamed to including angular
+04 - dependencies * renamed to 'including angular'
 
 * using stable version : it's what's supported by testing frameworks / component libraries / etc.
-* don't necessarily need jQuery for this application either. worth talking about but adds nothing to project. leaving it in anyway though
 
-
-
-05 - Module * remove global suggestion
-
-discouraged here https://github.com/mgechev/angularjs-style-guide
-and here https://github.com/johnpapa/angularjs-styleguide
-
-
+05 - Module * removed global app variable suggestion
 
 06 - routing * added dependency injection / config / route provider subsections
 
-
-
 07 - controllers * removed controllerAs to make things simpler
 http://stackoverflow.com/questions/11605917/this-vs-scope-in-angularjs-controllers
-    
-* it's a heated topic in my opinion... worth showing benefits of both instead of being so dogmatic
-    * 'this' is good for exposing API methods to other directives
-    * don't want everything exposed though, scope is good for private
-    * scope is also where $apply/$watch/forms/etc.. live
-    * so many ways to guide this inter-scope-communication such as: 
-        * 'require' and ctrl in directive ('this' only)
-        * 'scope: { '&@=' }, in directive (both)
-        * call on parent $scope directly in views of nested controllers (scope)
-        * using the ctrl as inside nested views on controllers (this)
 
-
+* added it back in at final project branch to show when complete (get a feel for both)
+* didn't explain benefits of both as article is quite long already
 
 08 - factory * removed persistence
 
-Maybe split HTTP into another setion
-
-Adding a new section for promises
-
-
+* Adding a new section for promises
 
 09 - hooking up the factory
 
 * Explained \Where did InboxFactory come from?\
-* tiny section is now just a sub section for factories?
+* tiny section is now just a sub section for factories
+* Moved the view information 'title' _out_ of the file that does the $http.... WOW, now exists in the controller, where it kinda should :S Infact it could basically exist in the view only... REALLY. left it in the controller as example of binding (it's needed for the Email Controller to update from "loading" job)
+    *  Include bad practice on purpose for the sake of introducing directives
 
-* Moved the view information 'title' _out_ of the file that does the $http.... WOW, now exists in the controller, where it kinda should :S Infact it could basically exist in the view REALLY.
+10 - templating and directives - split into two
 
-///
-*  Include bad practice on purpose for the sake of introducing directives
-
-
-
-
-10 - templating and directives
-
-* this is 2 large subjects... split them up??
-* view templating section is at part 13, probably worth doing here instead... it's like the first thing you do in the official angular tutorial.
-* 
-
-    removed the section 13 on view tmpl and put something here instead
-
-    Tidied up the factory a little bit, no longer setting messages of factory inside the directive
-        after just invoking the factory method <face-palm> why make this coupling??
-
-* problem here... lots of advance view logic using ng-model, ng-hide, ng-show, ng-repeat, ng-click
-    it's not explained
-
-
+* moved section 13 to here too, view templating (it's like the first thing you do in Angular tutorial)
+* Tidied up the factory a little bit, no longer setting messages of Inbox factory inside the directive (lol) just invoking the factory method <face-palm> why make this coupling??
 
 11 - builtin directives
 
-* changed this to be deeper into directives to talk more about the directive we created
+* talking more about the directive we created
 
+12 - expressions - removed: this has been covered repeatedly throughout the content now
 
+13 - view-tmpl - removed: also covered repeatedly (section 10)
 
-12 - expressions
+14 - di - removed: also covered repeatedly
 
-* removed - this has been covered repeatedly throughout the content now
+* This also had some content about minification of angular so use arrays of dependencies... seems like it's outside the scope of this guide as we don't minify anything... might be worth including an extras section at the end
 
+15 - cloaking * no changes (typo fix)
 
+16 - debugging
 
-13 - view-tmpl
+* added a little bit of content on routing error events
 
+17 - 
+* added a new section for 'complete project' talking about what final changes were made.
 
-* removed - also covered repeatedly
+17 - thinking angular - no changes
 
+18 - download - removed: we're changing the way this works
 
+19 - TODO
+- final section on the _stuff_
 
-14 - di
-
-* removed - also covered repeatedly
-
-This also had some content about minification of angular so use arrays of dependencies... seems like it's outside the scope of this guide as we don't minify anything... might be worth including an extras section at the end
-
-
-15 and 16 - cloaking and debugging
-
-* no changes (typo fix)
+#### Problems
+- section 10... lots of advance view logic using ng-model, ng-hide, ng-show, ng-repeat, ng-click it's not explained in much detail
 
 #### Worth adding
 - another directive for the views that abstracts out the title section

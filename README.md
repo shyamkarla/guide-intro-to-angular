@@ -14,3 +14,4 @@
 12. &#9744; Place URLs in strategic locations within the article as well as at the end of the article
 13. &#9744; Add instructions about how to work with the repository/downloads throughout the app as well as running the local server
 14. &#9744; ?? Add more comments back into the branch code?
+15. &#9744; Add another closing statement containing links, encouraging people to sign-up to the course!! :D
