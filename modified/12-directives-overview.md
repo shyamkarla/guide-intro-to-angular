@@ -20,12 +20,14 @@ app.directive('myCustomElement', function myCustomElement(){
         replace: true,
         scope: true,
         template: [
-            "<h1>My Custom Element</h1>",
-            "<div>Some content here!</div>",
-            "<span>{{ ctrl.expression }}</span>"
+            "<div>",
+            "   <h1>My Custom Element's Heading</h1>",
+            "   <p>Some content here!</p>",
+            "   <pre>{{ ctrl.expression | json }}</pre>",
+            "</div>"
         ].join(""),
         controllerAs: 'ctrl',
-        controller: function () {
+        controller: function ($scope) {
             this.expression = {
                 property: "Example"
             }

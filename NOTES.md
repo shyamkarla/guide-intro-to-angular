@@ -4,13 +4,6 @@ Section - part of the article
 App - The working project (source files)
 Stage - Point in the apps growth including source files
 
-## Large Sections Need Splitting Up
-
-* 08-factory & Promises
-* 11-templating - very big
-* 13-view templating
-* 14-DI
-
 _____
 ## App downloads
 
@@ -24,14 +17,15 @@ Here is a list of the sections of the article that are appropriate for each of t
 #### 02-first-controller
 - Section 8 Controllers
 
-Considering the ngView importance in this app, to get a first controller setup we need to explain sections 2 to 8 for the next pieces to work!
+Considering the ngView importance in this app, to get a first controller setup we need to explain sections 2 to 8 (mvc, scopes, ngView, module, routing, config) for the next pieces to work!
 
 #### 03-inbox-factory
 - Section 9 Promises
 
 Promises are a massive part of this application so they are used to explain the controller that uses the factory in section 8.
 
-
+#### 04-first-directive
+- Section 13 the complete directive
 
 
 _____
@@ -54,7 +48,9 @@ _____
 - why is routeParams inside the factories??
 - why are there blocking alerts??
 - remove dollar sign on link functions too.
-
+- use of setTimeout instead of $timeout bad for testing etc...
+- some problems with tight coupling between directive calling parent scope to change the title, HMM
+- changed directives to only restrict 'E'
 
 
 
@@ -155,4 +151,57 @@ Adding a new section for promises
     it's not explained
 
 
+
+11 - builtin directives
+
+* changed this to be deeper into directives to talk more about the directive we created
+
+
+
+12 - expressions
+
+* removed - this has been covered repeatedly throughout the content now
+
+
+
+13 - view-tmpl
+
+
+* removed - also covered repeatedly
+
+
+
+14 - di
+
+* removed - also covered repeatedly
+
+This also had some content about minification of angular so use arrays of dependencies... seems like it's outside the scope of this guide as we don't minify anything... might be worth including an extras section at the end
+
+
+15 and 16 - cloaking and debugging
+
+* no changes (typo fix)
+
+
+
+
+#### Not Covered
+- Talk through of the code in factories
+- Talk about services as an alternative to factories
+- Run function
+- Custom filters
+- Transclusion
+- Animation
+- resolve blocks
+- watch statements
+- angular's helpers like $window, $timeout
+
+#### Worth adding
+- another directive for the views that abstracts out the title section
+
+### Extras
+
+- built-in directives tutorials
+- minification of angular projects information
+- deeper into directives content talking about communication between directives, linking functions, compile functions, all the other stuff like that
 
