@@ -1,9 +1,17 @@
-# Thinkful AngularJS [thinkful to provide title]
+# AngularJS Tutorial: Build a Gmail Clone
 
-[intro content from Thinkful]
+Build a simple email application and learn core AngularJS concepts. By the end of this tutorial you'll be able to see (fake) emails, search by subject line and read / delete emails.
 
-[download links, top and bottom of article]
+Topics covered:
 
-We're going to walk through building a simple AngularJS Email application, whilst covering some concepts in modern development and the Angular framework. It'll allow you to see some emails, read or delete them.
+- Single page applications (SPA)
+- Client-side MVC patterns
+- Two way data-binding
+- AngularJS building blocks
+    - Directives
+    - Factories
+    - Controllers
 
-We'll cover single page applications, client-side MVC patterns, two way data-binding as well as the building blocks such as directives, factories and controllers.
+__Note:__ This guide is open to the public. You can view the source code on [GitHub](https://github.com/Thinkful/guide-intro-to-angular) where you'll find a sample app to follow along.
+
+Ready? Let's dive in!
