@@ -1,9 +1,13 @@
 ## Client-side MVC
 
-Let's start with a concept which Angular have applied to their framework; client-side MVC. Broken down these things are easier to digest:
+Let's start with a concept that's core to Angular: client-side MVC. MVC stands for Model, View, Controller. Let's explore each concept individually:
 
-* Model: Our data, the business information of the application
-* View: The HTML and presentation of data
-* Controller: Connecting the pieces of our application
+* Model: That's the data; the business information of the application.
+* View: The HTML and presentation of the data. That's what the user sees and interacts with.
+* Controller: The connector that makes all the different pieces of our application work together.
 
-It's a proven approach to organizing our apps code that's been refined over many years. Angular likes to use the similar technique of MC*, where the * stands for 'whatever'.  In other words, the Controller part is different to usual, but this is beside the point, lets get something working.
+The MVC pattern is a proven approach to organizing application code that's been refined over many years.
+
+__Fun fact:__ Ruby on Rails is an MVC framework for the Ruby programming language.
+
+Angular likes to use MC* techniques, where the * stands for 'whatever' (often refered to as [MVW](http://stackoverflow.com/questions/13329485/mvw-what-does-it-stand-for)). In other words, the Controller part is different to usual, but this is beside the point, lets get something working.
