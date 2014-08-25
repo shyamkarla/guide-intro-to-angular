@@ -1,9 +1,13 @@
-## Including The Angular JavaScript Files!
+## Getting started with AngularJS
 
-Angular comes as a single `.js` file that needs including at the bottom of the page. I'd advise putting it there rather than the `<head>` for better document rendering.  This needs to included before we can get any of the Angular goodies to work and see what they do.  So let's just do that!
+Angular comes as a single `.js` file that needs to be included at the bottom of your HTML page. I'd advise putting it there rather than in the `<head>` for better document rendering.
+
+__Note:__ You need to add the AngularJS library before we can get any of the Angular goodies working and see what they do. Let's do just that!
 
 
-For this app we're going to use `version 1.2.22` which at the moment of writing this is the most recent.  This is recommended for now as other third party plugins will have not been tested on the latest beta versions:
+For this app we're going to use `version 1.2.22` which at the moment of writing this is the most recent.  This is recommended for now as other third party plugins will have not been tested on the latest beta versions.
+
+Your HTML should look like this:
 
 ```html
 <html>
@@ -17,6 +21,8 @@ For this app we're going to use `version 1.2.22` which at the moment of writing 
 </html>
 ```
 
-###### Note: You can also instead use `v1.3.0-beta.7` of Angular, an unreleased latest version which I've been using recently is also very nice to feel free to try it out!
+__Note:__ We're also including jQuery.
 
-Notice I've also included the jQuery library as well. Angular has something called 'jQLite' built in, a jQuery-like micro-library that Angular packages internally. It's very light and doesn't have many of the great jQuery methods that might be needed, as well as any plugins we need that might depend on the full library. Angular uses the full jQuery library if it's loaded - so I've loaded it before Angular so it can detect it and use it instead.
+Angular comes with something called 'jQLite' built in. It's a jQuery-like micro-library that Angular packages internally. jQLite is very light (as the name implies) and doesn't have many of the great jQuery methods that you might need. It's also good to consider that many plugins you might need will likely depend on the full jQuery library.
+
+__Good to know:__ Angular uses the full jQuery library if it's loaded - so I've loaded it before Angular so it can detect it and use it instead of jQLite.
