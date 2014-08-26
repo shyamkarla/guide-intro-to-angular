@@ -7,6 +7,8 @@ __Note:__ You need to add the AngularJS library before we can get any of the Ang
 
 For this app we're going to use `version 1.2.22` which at the moment of writing this is the most recent.  This is recommended for now as other third party plugins will have not been tested on the latest beta versions.
 
+To download AngularJS go to [AngularJS.org](https://angularjs.org/) and click on the blue "Download" button. Select the 'legacy' branch, which is the latest stable build, and click "Download".
+
 Your HTML should look like this:
 
 ```html
