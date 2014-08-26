@@ -42,3 +42,5 @@ app.factory('InboxFactory', function InboxFactory ($http) {
 This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the [promise](http://spring.io/understanding/javascript-promises) returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the [Angular promise API](https://docs.angularjs.org/api/ng/service/$q), the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
 
 You can view [Angular's $http documentation here](https://docs.angularjs.org/api/ng/service/$http).
+
+> Code check: [04-inbox-factory](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/04-inbox-factory)

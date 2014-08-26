@@ -18,3 +18,4 @@ We've made a bunch of changes to the project to give it a more complete feel, he
 
 I would encourage you to have a read through the code and try to understand what's happening!  You may of course find much more suitable ways to accomplish the same results to your own liking, this is just an example for learning purposes but we've been sure to include a number of good thinking points for you to work from!  You may be able to find some other little tricks we've included such as `$timeout`, `ng-bind-html` and last but certainly not least `$watch`.
 
+> Code check: [final-section](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/final-section)
