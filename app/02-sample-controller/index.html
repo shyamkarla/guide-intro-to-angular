@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS Email App</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div ng-controller="TestCtrl">
+        <h1>{{title}}</h1>
+        <input type="text" ng-model="title">
+    </div>
+
+    <script src="lib/jquery-v1.11.1.js"></script>
+    <script src="lib/angular-v1.2.22.js"></script>
+
+    <script>
+      var myApp = angular.module('myApp',[]);
+
+      myApp.controller('TestCtrl', ['$scope', function($scope) {
+        $scope.title = 'Write a title here...';
+      }]);
+    </script>
+  </body>
+</html>
