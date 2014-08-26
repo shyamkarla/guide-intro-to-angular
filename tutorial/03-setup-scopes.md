@@ -26,3 +26,74 @@ The second scope is `ng-controller`, this will determine where our controller ca
 ```
 
 Both, `ng-app` and `ng-controller`, are Angular directives. Think of Angular directive as something that allows you to extend your HTML. Here's a [more nerdy explanation](http://stackoverflow.com/a/13898058/1319206) in case you're interested.
+
+## Your First Controller: A Quick Example
+
+Let's put everything we just learned into practice.
+
+1. Start with a blank HTML document
+2. Link your Angular and jQuery files
+
+```html
+<script src="lib/jquery-v1.11.1.js"></script>
+<script src="lib/angular-v1.2.22.js"></script>
+```
+
+3. Add `ng-app="myApp"` to the HTML tag
+4. Inside the body, create a sample controller
+
+```html
+<div ng-controller="TestCtrl">
+    <h1>{{title}}</h1>
+    <input type="text" ng-model="title">
+</div>
+```
+
+We'll explain what `{{title}}` and `ng-model="title"` is in a minute.
+
+5. Create an inline JavaScript script — make sure this is below the script tag where you load the libraries.
+
+```html
+<script>
+  var myApp = angular.module('myApp',[]);
+
+  myApp.controller('TestCtrl', ['$scope', function($scope) {
+    $scope.title = 'Write a title here...';
+  }]);
+</script>
+```
+
+
+Below's the final version:
+
+```html
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>Sample AngularJS Controller</title>
+  </head>
+  <body>
+    <div ng-controller="TestCtrl">
+        <h1>{{title}}</h1>
+        <input type="text" ng-model="title">
+    </div>
+
+    <script src="lib/jquery-v1.11.1.js"></script>
+    <script src="lib/angular-v1.2.22.js"></script>
+
+    <script>
+      var myApp = angular.module('myApp',[]);
+
+      myApp.controller('TestCtrl', ['$scope', function($scope) {
+        $scope.title = 'Write a title here...';
+      }]);
+    </script>
+  </body>
+</html>
+```
+
+> Code check: [02-sample-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/02-sample-controller)
+
+You can view the result by opening the `index.html` file in your browser.
+
+Interested in learning more about controllers? Here's a [good guide from AngularJS.org](https://docs.angularjs.org/guide/controller).
