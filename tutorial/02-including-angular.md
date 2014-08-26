@@ -26,3 +26,5 @@ __Note:__ We're also including jQuery.
 Angular comes with something called 'jQLite' built in. It's a jQuery-like micro-library that Angular packages internally. jQLite is very light (as the name implies) and doesn't have many of the great jQuery methods that you might need. It's also good to consider that many plugins you might need will likely depend on the full jQuery library.
 
 __Good to know:__ Angular uses the full jQuery library if it's loaded - so I've loaded it before Angular so it can detect it and use it instead of jQLite.
+
+> Code check: [01-include-angular](https://github.com/Thinkful/guide-intro-to-angular/tree/master/app/01-include-angular)
