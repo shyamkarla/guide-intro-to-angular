@@ -42,9 +42,9 @@ var app = angular.module('app', [
 
 ### Config Stage
 
-We saw before how to bind a Controller to the DOM, which is just one way of doing it. Angular allows you to dynamically assign a Controller through the `$routeProvider` service, which is much more flexible. From now on let's use this instead of using `ng-controller=""` to declare Controllers.
+We saw before how to bind a Controller to the DOM (or to a specific view, to put it another way), which is just one way of doing it. Angular allows you to dynamically assign a Controller through the `$routeProvider` service, which is much more flexible. From now on let's use this instead of using `ng-controller=""` to declare Controllers.
 
-Angular modules each have a `.config()` function, we give this a callback that is ran before most other function callbacks in Angular.  This is where we must configure our routes (the different URLs visitors will be able to access).
+Angular modules each have a `.config()` function, we give this a callback that is run before most other function callbacks in Angular.  This is where we must configure our routes (the different URLs visitors will be able to access).
 
 ```js
 app.config(function () { /*...*/ });
