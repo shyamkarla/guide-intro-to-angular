@@ -29,4 +29,4 @@ Angular comes with something called 'jQLite' built in. It's a jQuery-like micro-
 
 __Good to know:__ Angular uses the full jQuery library if it's loaded - so I've loaded it before Angular so it can detect it and use it instead of jQLite.
 
-> Code check: [01-include-angular](https://github.com/Thinkful/guide-intro-to-angular/tree/master/app/01-include-angular)
+> Code check: [01-include-angular](https://github.com/Thinkful/guide-intro-to-angular/tree/clean/app/01-include-angular)
