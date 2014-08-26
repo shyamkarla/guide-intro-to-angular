@@ -1,8 +1,8 @@
 ## What's a Factory?
 
-Angular Factories can be used for many different things. Some of the most common use-cases are server-side communication via HTTP and abstracting Models to persist application state and changes accross controllers. Angular Factories are a great way to create reusable features and code blocks throughout our application.
+Angular Factories can be used for many different things. Some of the most common use-cases are [server-side](http://en.wikipedia.org/wiki/Server-side) communication via HTTP and abstracting Models to persist application state and changes accross controllers. Angular Factories are a great way to create reusable features and code blocks throughout our application.
 
-__Key takeaway:__ If you want to communicate with a RESTful API, do it through a factory! If you want to store a 'CurrentUser' with authentication information, do it in a factory!
+__Key takeaway:__ If you want to communicate with a [RESTful API](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming/#answer-671132), do it through a factory! If you want to store a 'CurrentUser' with authentication information, do it in a factory!
 
 ###### Note:  You may have heard of factories as a design pattern in many programming languages, but Angular's factories are different to those in practice (maybe not in spirit :).
 
@@ -18,7 +18,7 @@ app.factory('ExampleFactory', function ExampleFactory($rootScope, $http, $locati
 
 Notice how we're injecting a few different things here, such as: `$rootScope`, `$http`, `$location`. We'll cover these in a bit.
 
-It's often good practice to create an `exports` Object inside your Factories and return it. This helps with explicit internal naming helps you see which methods / variables are private or not ([closures](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work) [ftw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)).
+It's often good practice to create an `exports` Object inside your Factories and return it. This helps with explicit internal naming which helps you see which methods / variables are private or not ([closures](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work) [ftw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)).
 
 In this app, we'll need to get our messages, so let's create a function to do that. Angular uses the `$http` service to communicate with the server, so we'll inject it:
 
@@ -39,7 +39,6 @@ app.factory('InboxFactory', function InboxFactory ($http) {
 
 ### $http
 
-This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the promise returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the Angular promise API, the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
+This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the [promise](http://spring.io/understanding/javascript-promises) returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the [Angular promise API](https://docs.angularjs.org/api/ng/service/$q), the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
 
-You can view [Angular's $http documentation here](https://docs.angularjs.org/api/ng/service/$http). Ohh, and here's a short explanation of [JavaScript promises](http://spring.io/understanding/javascript-promises).
-
+You can view [Angular's $http documentation here](https://docs.angularjs.org/api/ng/service/$http).
