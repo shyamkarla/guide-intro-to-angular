@@ -1,28 +1,45 @@
-## Promises ($q) &amp; Connecting Our Controller and Factory Together
+## Promises ($q) and Connecting Our Controller and Factory Together
 
-Promises are very important inside Angular, as it's important be able to organize functions that take a long time to do things; e.g. a HTTP request!  And that's all promises are, a way to organize and appropriately react to our methods that take a long time! `$q` is quite a strange beast, you would create a `var deferred` object, returned from $q's `defer()` method and from there, you can access the promise property (object) of the deferred object by `deferred.promise`.
+Promises are very important inside Angular, they allow you to organize functions that take a long time to do things (e.g. HTTP requests). Promises in Angular are implemented with `$q`. The `$q` implementation was inspired by [Kris Kowal's Q](https://github.com/kriskowal/q).
 
-The promise object itself gives us the ability to ask (similar to an event handler):
+To be honest, `$q` is quite a strange beast. Here's a [great cartoon explaining promises](http://andyshora.com/promises-angularjs-explained-as-cartoon.html). If you'd like to see another practical example, checkout the [Angular $q documentation](https://docs.angularjs.org/api/ng/service/$q).
 
-"when this HTTP request or maybe another function that takes a long time to complete has finished"
-"if it all goes well, please do the success function I give to .then()"
-"if it goes wrong, please to the catch function I give to .then()"
+This is how promoses work:
+- "Do something when this HTTP request — or another function that takes a long time to complete — has finished"
+- "If it all goes well, please do the success function I give to .then()"
+- "If it goes wrong, please to the catch function I give to .then()"
 
+Sample code:
 ```js
-var d = $q.defer();
-d.promise.then(
+var deferred = $q.defer();
+deferred.promise.then(
     function whenThingsGoSunny(){},
     function whenThingsDontDoGoSoSunny(){}
 )
 ```
 
-Promises have quite a few interesting behaviors that you can read about here:
+Notice that the first function we pass is the `success` function and the second one is the `error` function.
 
-NEED LINK TO PROMISES INFORMATION
+Promises have quite a few interesting behaviors that you can read about [here](https://docs.angularjs.org/api/ng/service/$q).
 
-The object returned from using $http is similar to a promise, and $http()'s `.success()` function is similar to `then()`.  Although it only accepts one argument, a callback function; and doesn't accept a callback for errors like the `then()` does.
+When making HTTP requests in Angular you'll often use the `$http` service which is based on `$q`.
 
-NEED LINK TO HTTP AND SUCCESS
+As we just saw, `$q` allows you to use `.then()` to include a `success` and an `error` function. When using `$http`, you can do something very similar (but without the `.then()`:
+
+```js
+$http({method: 'GET', url: '/someUrl'})
+    .success(function(data, status, headers, config) {
+        // this callback will be called asynchronously
+        // when the response is available
+    })
+    .error(function(data, status, headers, config) {
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+    }
+);
+```
+
+Read the [$http documentation](https://docs.angularjs.org/api/ng/service/$http) for more details.
 
 ### Hooking up the Factory and Controller
 
@@ -39,4 +56,6 @@ app.controller('InboxCtrl', function ($scope, InboxFactory) {
 });
 ```
 
-See how the `InboxFactory` factory is available as an injectable in our controller?  That's dependency injection helping us out again!  We then call the `getMessages` method on the factory and using the $http()'s `success` method (`$http()` was returned from `getMessages()`), we can then add the list of Emails/messages to our controller's `$scope` and use it in the view. i.e. The `success(fn)` is available from chaining when we do `http()` or `http.get()`, etc&hellip;
+See how the `InboxFactory` factory is available as an injectable in our controller? That's dependency injection helping us out again!
+
+We then call the `getMessages` method on the factory and using the $http()'s `success` method (`$http()` was returned from `getMessages()`), we can then add the list of emails / messages to our controller's `$scope` and use it in the view. i.e. The `success(fn)` is available from chaining when we do `http()` or `http.get()`, etc&hellip;
