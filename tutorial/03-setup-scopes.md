@@ -63,6 +63,7 @@ We'll explain what `{{title}}` and `ng-model="title"` is in a minute.
 </script>
 ```
 
+We'll explain `angular.module('myApp',[]);` and `myApp.controller()` in the next few sections.
 
 Below's the final version:
 
@@ -94,6 +95,6 @@ Below's the final version:
 
 > Code check: [02-sample-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/clean/app/02-sample-controller)
 
-You can view the result by opening the `index.html` file in your browser.
+__This can be confusing!__ It often helps to see the code in action. View the result by downloading the Code check and opening the `index.html` file in your browser.
 
 Interested in learning more about controllers? Here's a [good guide from AngularJS.org](https://docs.angularjs.org/guide/controller).
