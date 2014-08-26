@@ -92,7 +92,7 @@ Below's the final version:
 </html>
 ```
 
-> Code check: [02-sample-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/02-sample-controller)
+> Code check: [02-sample-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/clean/app/02-sample-controller)
 
 You can view the result by opening the `index.html` file in your browser.
 
