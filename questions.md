@@ -1,0 +1,1 @@
+- Should we get rid of the whole controller section in section 03. We don't do anything with them and then jump into the $routeProvider. Or, better, would be to have a small example where we bind a simple controller to the DOM.
