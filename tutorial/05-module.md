@@ -13,7 +13,7 @@ To get a reference to a module, for registering controllers, factories, filters,
 angular.module('myApp');
 ```
 
-###### Note: When we specified the `ng-app="myApp"`, the `"myApp"` part will be the same as one of the `angular.module("aBunchOfDifferentApps", [])` names we created.
+###### Note: When we specified the `ng-app="myApp"`, the `"myApp"` part in the module should be the same. Another way to put it, the name of the app has to carry over.
 
 The `angular.module()` method also returns a reference to the module which can make accessing it a little less verbose, however this pattern is discouraged due to potential problems with global variables:
 

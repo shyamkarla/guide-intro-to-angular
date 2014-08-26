@@ -95,6 +95,6 @@ Below's the final version:
 
 > Code check: [02-sample-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/clean/app/02-sample-controller)
 
-__This can be confusing!__ It often helps to see the code in action. View the result by downloading the Code check and opening the `index.html` file in your browser.
+__This can be confusing!__ It often helps to see the code in action. View the result by downloading the _Code check_ and opening the `index.html` file in your browser.
 
 Interested in learning more about controllers? Here's a [good guide from AngularJS.org](https://docs.angularjs.org/guide/controller).
