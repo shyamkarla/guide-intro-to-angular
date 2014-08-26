@@ -4,9 +4,6 @@ Now we can setup our routes using the `$routeProvider` in the `.config()` callba
 
 ```js
 app.config(function ($routeProvider) {
-
-  'use strict';
-
   $routeProvider
     .when('/inbox', {
       templateUrl: 'views/inbox.html',
