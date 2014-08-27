@@ -54,4 +54,4 @@ These are some of the most commonly used properties, though you can check the [d
 
 __Note:__ Here's a [great video introducing Angular directives](https://www.youtube.com/watch?v=0r5QvzjjKDc).
 
-Directives are not just custom elements, they are much more... you can use them for all sort of custom logic, especially that you might wish to reuse some code. (Keep it [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself).)
+Directives are not just custom elements, they are much more... you can use them for all sort of custom logic, especially that you want to reuse some code. (Gotta keep it [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself).)

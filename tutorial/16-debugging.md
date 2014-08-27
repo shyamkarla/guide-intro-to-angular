@@ -1,10 +1,12 @@
 ## Debugging
 
+Debugging in Angular can be very difficult and frustrating. This section will give you the foundation you need to simplify the process.
+
 #### Stack Trace Function Names
 
-Angular uses a lot of anonymous functions in the call stack. When these throw an error, and believe me you'll see a lot of them during development, to make things easier to debug I've named anonymous functions.
+Angular uses a lot of anonymous functions in the call stack. When these throw an error (yes, you'll see a lot of errors during development), to make things easier to debug, I've named anonymous functions.
 
-Here's before:
+Here it is before:
 
 ```js
 app.factory('InboxFactory',
@@ -12,7 +14,7 @@ app.factory('InboxFactory',
 ):
 ```
 
-...and after:
+...and now after:
 
 ```js
 app.factory('InboxFactory',
@@ -34,8 +36,8 @@ app.run(function($rootScope){
 });
 ```
 
-Above is an example of how you would setup an event listener for any errors that occur during a route change.
+The above example sets an event listener for any errors that occur during a route change.
 
 #### Debugging Scopes
 
-Another good article which goes into good detail regarding scope debugging is available [here](http://ionicframework.com/blog/angularjs-console/)
+Here's a great article for [debugging scopes](http://ionicframework.com/blog/angularjs-console/).

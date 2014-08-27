@@ -1,6 +1,8 @@
 ## Cloaking
 
-Angular has a really neat built-in feature called cloaking, which you can declare on an Element to tell Angular it needs cloaking whilst rendering. This will hide any handlebars you might see flicker before Angular has rendered and loaded data.
+__Note:__ Cloaking is a bit of an advanced trick but we thought you might enjoy it :) Feel free to skip over this section if you'd like.
+
+Angular has a really neat built-in feature called cloaking, which you can declare on an Element to tell Angular it needs cloaking (hide it) whilst it's still rendering. Cloaking allows you to hide any handlebars you might see flicker before Angular has rendered and loaded your data. E.g. `{{user.name}}` before the user data has had time to load.
 
 When `lib/angular.js` has loaded, it appends an inline `<style></style>` element with cloaking styles to hide elements during load. This can sometimes take a second to load as it's got a JavaScript dependency too, so I recommend setting up the `<head></head>` of your document like this:
 
