@@ -148,6 +148,7 @@ ol {
   margin: 10px 0 0;
   display: inline-block;
   right: 0;
+  margin-left: 25px;
 }
 .inbox__list-subject {
   font-weight: 900;
@@ -221,4 +222,10 @@ li.no-emails {
 }
 .email__response-text:focus {
   border-color: #aaa;
+}
+
+@media screen and (max-width: 840px) {
+  .module.inbox-view {
+    display: none;
+  }
 }
