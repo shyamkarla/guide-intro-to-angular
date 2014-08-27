@@ -46,4 +46,10 @@ We can then use this like so:
 
 In order to keep our controllers more reusable, we would hook up data in our controller via a Factory or Service.
 
-> Code check: [03-application-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/03-application-controller)
+> Code check: [03-application-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/clean/app/03-application-controller)
+
+__Note:__ To run this Code check you'll need to:
+- Make sure you've downloaded the code. Do this by going [here](https://github.com/Thinkful/guide-intro-to-angular/tree/clean) and either cloning the repo or clicking "Download Zip".
+- In your terminal, navigate to the project folder (e.g. `/Users/carl/Downloads/guide-intro-to-angular/app/03-application-controller`)
+- Run a simple local server. On a Mac, you can do this by running `python -m SimpleHTTPServer`
+- In your browser, go to `http://localhost:8000/`
