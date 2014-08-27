@@ -4,10 +4,10 @@ Promises are very important inside Angular, they allow you to organize functions
 
 To be honest, `$q` is quite a strange beast. Here's a [great cartoon explaining promises](http://andyshora.com/promises-angularjs-explained-as-cartoon.html). If you'd like to see another practical example, checkout the [Angular $q documentation](https://docs.angularjs.org/api/ng/service/$q).
 
-This is how promoses work:
+This is how promises work:
 - "Do something when this HTTP request — or another function that takes a long time to complete — has finished"
 - "If it all goes well, please do the success function I give to .then()"
-- "If it goes wrong, please to the catch function I give to .then()"
+- "If it goes wrong, please do the catch function I give to .then()"
 
 Sample code:
 ```js
