@@ -35,3 +35,5 @@ These templates are an essential aspect to Angular as we can not only make the m
 As mentioned before, it often helps to see the code in action. View the result by downloading the _Code check_ and opening the `index.html` file in your browser. You can also tweak the `$scope` values inside `index.html`.
 
 > Code check: [05-templating](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/05-templating)
+
+View the result by downloading the _Code check_ and opening the `index.html` file in your browser. Play around with the `$scope` values inside `index.html` and refresh your page to see how everythign updates.

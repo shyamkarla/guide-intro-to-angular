@@ -44,3 +44,9 @@ This will use $http to make a GET request to our "json/emails.json" file; here w
 You can view [Angular's $http documentation here](https://docs.angularjs.org/api/ng/service/$http).
 
 > Code check: [04-inbox-factory](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/04-inbox-factory)
+
+__Note:__ To run this Code check you'll need to:
+- Make sure you've downloaded the code. Do this by going [here](https://github.com/Thinkful/guide-intro-to-angular/tree/clean) and either cloning the repo or clicking "Download Zip".
+- In your terminal, navigate to the project folder (e.g. `/Users/carl/Downloads/guide-intro-to-angular/app/04-inbox-factory`)
+- Run a simple local server. On a Mac, you can do this by running `python -m SimpleHTTPServer`
+- In your browser, go to `http://localhost:8000/`
