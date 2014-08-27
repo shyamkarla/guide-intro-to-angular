@@ -33,4 +33,4 @@ So all these `ng-` attributes are directives created just the same as how we mak
 
 > Code check: [07-ng-repeat](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/07-ng-repeat)
 
-View the result by downloading the _Code check_ and opening the `index.html` file in your browser. Play around with the `fruits` values inside `index.html` and refresh your page to see how everythign updates.
+View the result by downloading the _Code check_ and opening the `index.html` file in your browser. Play around with the `fruits` values inside `index.html` and refresh your page to see how everything updates.

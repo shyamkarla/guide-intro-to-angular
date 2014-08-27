@@ -11,8 +11,8 @@ We've made a bunch of changes to the project to give it a more complete feel, he
 5. We uncommented the goToMessage method in our Inbox Factory that will navigate to the new route.
 6. We simplified our controllers further so they now only use the title on 'this' (Controller As)
 7. We added the Email Controller and view
-8. We added the Email Factory which adds a bunch of factory and JavaScript alert where server communication would be appropriate.
-9. We added the Email Directive and it's template as well as using it in our Email View 
+8. We added the Email Factory which adds a bunch of factory and JavaScript alerts where server communication would be appropriate.
+9. We added the Email Directive and its template as well as using it in our Email View
 10. We added new json files for each of the messages
 11. We added the ng-cloak, however it isn't used in this application as ngView covers this for us :)
 
