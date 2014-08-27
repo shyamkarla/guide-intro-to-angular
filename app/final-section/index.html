@@ -8,21 +8,17 @@
       display: none !important;
     }
     </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="header" role="banner">
-      <div class="wrapper">
-        <div class="header__text">
-          <img src="img/logo.png">
-          <p>Email application</p>
-        </div>
+      <div class="header__text">
+        <p>AngularJS Email Application &mdash; <a href="http://www.thinkful.com/a/learn">Thinkful.com</a></p>
       </div>
     </header>
 
     <main class="main" role="main">
-      <div class="wrapper">
-        <div ng-view></div>
-      </div>
+      <div ng-view class="flex"></div>
     </main>
 
     <!-- Vendor libraries -->
