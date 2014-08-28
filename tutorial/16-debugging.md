@@ -26,7 +26,7 @@ This will then show errors `at InboxFactory` rather than `at anonymous`. A handy
 
 #### Routing Problems
 
-Another debugging tip when working with routes is to listen for Routing Events to be triggered on the `$rootScope`.  A suitable place for this is the `run` function  --some (information about run)[https://docs.angularjs.org/guide/module#module-loading-dependencies]-- which can be thought of as a 'controller for the module', but try to keep this section as small as possible!
+Another debugging tip when working with routes is to listen for Routing Events to be triggered on the `$rootScope`.  A suitable place for this is the `run` function, (found here)[https://docs.angularjs.org/guide/module#module-loading-dependencies], which can be thought of as a 'controller for the module', but try to keep this section as small as possible!
 
 ```js
 app.run(function($rootScope){
