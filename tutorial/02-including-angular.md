@@ -2,7 +2,7 @@
 
 Angular comes as a single `.js` file that needs to be included at the bottom of your HTML page. I'd advise putting it there rather than in the `<head>` for better document rendering.
 
-__Note:__ You need to add the AngularJS library before we can get any of the Angular goodies working and see what they do. Let's do just that!
+###### Note: You need to add the AngularJS library before we can get any of the Angular goodies working and see what they do. Let's do just that!
 
 
 For this app we're going to use `version 1.2.22` which at the moment of writing this is the most recent.  This is recommended for now as other third party plugins will have not been tested on the latest beta versions.
@@ -23,7 +23,7 @@ Your HTML should look like this:
 </html>
 ```
 
-__Note:__ We're also including jQuery.
+###### Note: We're also including jQuery.
 
 Angular comes with something called 'jQLite' built in. It's a jQuery-like micro-library that Angular packages internally. jQLite is very light (as the name implies) and doesn't have many of the great jQuery methods that you might need. It's also good to consider that many plugins you might need will likely depend on the full jQuery library.
 
