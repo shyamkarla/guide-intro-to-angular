@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="myApp">
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <title>AngularJS Email App</title>
@@ -15,11 +15,9 @@
     <script src="lib/angular-v1.2.22.js"></script>
 
     <script>
-      var myApp = angular.module('myApp',[]);
-
-      myApp.controller('TestCtrl', ['$scope', function($scope) {
-        $scope.title;
-      }]);
+      function TestCtrl($scope) {
+        $scope.title = "Example title! (Change or delete me)";
+      }
     </script>
   </body>
 </html>
