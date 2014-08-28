@@ -9,7 +9,7 @@ This is where the real fun begins!
 Since Angular 1.2.0, the `$routeProvider` hasn't been included in the main Angular build, so we'll need to include it as a separate module.
 
 
-To download the `$routeProvider` (also called `angular-route`) go to [AngularJS.org](https://angularjs.org/) and click on the blue "Download" button. Click on "Browse additional modules", select `angular-route.js` and save that file.
+To download the `$routeProvider` (which lives inside `angular-route`) go to [AngularJS.org](https://angularjs.org/) and click on the blue "Download" button. Click on "Browse additional modules", select `angular-route.js` and save that file.
 
 
 ```html
