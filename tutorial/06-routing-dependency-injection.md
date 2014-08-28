@@ -26,7 +26,7 @@ You can find the version at the top of any file downloaded from AngularJS.org. I
 
 ```js
 /**
- * @license AngularJS __v1.2.23__
+ * @license AngularJS __v1.2.22__
  * (c) 2010-2014 Google, Inc. http://angularjs.org
  * License: MIT
  */
