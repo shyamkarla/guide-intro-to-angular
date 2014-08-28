@@ -55,21 +55,19 @@ We'll explain what `{{title}}` and `ng-model="title"` is in a minute.
 
 ```html
 <script>
-  var myApp = angular.module('myApp',[]);
-
-  myApp.controller('TestCtrl', ['$scope', function($scope) {
+  function TestCtrl($scope) {
     $scope.title = 'Write a title here...';
-  }]);
+  };
 </script>
 ```
 
-We'll explain `angular.module('myApp',[]);` and `myApp.controller()` in the next few sections.
+See how the function name is the same as the `ng-controller`s value?  Angular will be looking for a function with this name in our JavaScript so that it can act as a Controller.  Nifty stuff!
 
 Below's the final version:
 
 ```html
 <!doctype html>
-<html ng-app="myApp">
+<html ng-app>
   <head>
     <title>Sample AngularJS Controller</title>
   </head>
@@ -83,11 +81,9 @@ Below's the final version:
     <script src="lib/angular-v1.2.22.js"></script>
 
     <script>
-      var myApp = angular.module('myApp',[]);
-
-      myApp.controller('TestCtrl', ['$scope', function($scope) {
+      function TestCtrl($scope) {
         $scope.title = 'Write a title here...';
-      }]);
+      };
     </script>
   </body>
 </html>
@@ -95,6 +91,6 @@ Below's the final version:
 
 > Code check: [02-sample-controller](https://github.com/Thinkful/guide-intro-to-angular/tree/clean/app/02-sample-controller)
 
-__This can be confusing!__ It often helps to see the code in action. View the result by downloading the _Code check_ and opening the `index.html` file in your browser.
+__This can be confusing!__ It often helps to see the code in action. View the result by downloading the _Code check_ and opening the `index.html` file in your browser.  Be sure to change the $scope.title's value as well as play around with the input.
 
 Interested in learning more about controllers? Here's a [good guide from AngularJS.org](https://docs.angularjs.org/guide/controller).
