@@ -17,7 +17,7 @@ The first one, we create an array and put two String $scope variables inside it,
 
 The second we multiply two Number $scope variables together and then apply a currency filter on them. You can read more about filters [here](https://docs.angularjs.org/api/ng/filter) in the Angular documentation.
 
-The third line of code we make use of a JavaScript ternary operator inside the expression to check whether the Number $scope property `total` is greater than the budget property and display the appropriate message in the div.
+The third line of code we make use of a [JavaScript ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) inside the expression to check whether the Number $scope property `total` is greater than the budget property and display the appropriate message in the div.
 
 The JavaScript inside an assigned controller would be as so:
 
