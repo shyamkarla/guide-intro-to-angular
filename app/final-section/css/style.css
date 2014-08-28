@@ -90,7 +90,7 @@ ol {
 .flex {
   display: flex;
   align-items: stretch;
-  min-height: 600px;
+  min-height: 1000px;
 }
 
 /**
