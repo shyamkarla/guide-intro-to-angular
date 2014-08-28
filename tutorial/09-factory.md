@@ -39,7 +39,7 @@ app.factory('InboxFactory', function InboxFactory ($http) {
 
 ### $http
 
-This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the [promise](http://spring.io/understanding/javascript-promises) returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the [Angular promise API](https://docs.angularjs.org/api/ng/service/$q), the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
+This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the [promise](http://andyshora.com/promises-angularjs-explained-as-cartoon.html) returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the [Angular promise API](https://docs.angularjs.org/api/ng/service/$q), the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
 
 ###### Note: What are "sugar" methods? In simple terms. Syntactic sugars are a feature in a programming language that lets you express an idea in a more convenient way.
 
