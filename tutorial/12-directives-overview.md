@@ -52,6 +52,6 @@ Next, we return a JavaScript Object with various properties on it to describe ho
 
 These are some of the most commonly used properties, though you can check the [documentation](https://docs.angularjs.org/api/ng/service/$compile#directive-definition-object) (found under the $compile section of the API) for other properties. You can also browse [Angular's documentation on directives](https://docs.angularjs.org/guide/directive).
 
-__Note:__ Here's a [great video introducing Angular directives](https://www.youtube.com/watch?v=0r5QvzjjKDc).
+###### Note: Here's a [great video introducing Angular directives](https://www.youtube.com/watch?v=0r5QvzjjKDc).
 
-Directives are not just custom elements, they are much more... you can use them for all sort of custom logic, especially that you want to reuse some code. (Gotta keep it [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself).)
+Directives are not just custom elements, they are much more... you can use them for all sort of custom logic, especially when you want to reuse some code. (Gotta keep it [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself).)

@@ -75,7 +75,7 @@ When the application runs, Angular will replace the `<inbox>` element with the t
 
 Finally we have a link function that will run straight after the controller runs. The link function will then receive the aliased controller as the fourth argument, here we named it `ctrl`.  Yes that's right, the link function has fixed positions for it's arguments i.e. scope is always first.
 
-__Note:__ This is different behavior to the controller's arguments which are injected and therefore can take any order. For the link function we don't use the $ prefix for scope, element and attributes to make it clear that they aren't under the control of dependency injection.
+###### Note: This is different behavior to the controller's arguments which are injected and therefore can take any order. For the link function we don't use the $ prefix for scope, element and attributes to make it clear that they aren't under the control of dependency injection.
 
 Here's the complete HTML template (view) for the directive:
 
@@ -115,7 +115,7 @@ Notice the use of built-in angular directives such as `ng-hide`, `ng-show`, `ng-
 
 > Code check: [06-first-directive](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/06-first-directive)
 
-__Note:__ To run this Code check you'll need to:
+###### Note: To run this Code check you'll need to:
 - Make sure you've downloaded the code. Do this by going [here](https://github.com/Thinkful/guide-intro-to-angular/tree/clean) and either cloning the repo or clicking "Download Zip".
 - In your terminal, navigate to the project folder (e.g. `/Users/carl/Downloads/guide-intro-to-angular/app/06-first-directive`)
 - Run a simple local server. On a Mac, you can do this by running `python -m SimpleHTTPServer`. If you're on windows, try doing this by installing [Mongoose](https://code.google.com/p/mongoose/).

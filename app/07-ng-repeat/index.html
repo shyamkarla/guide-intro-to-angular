@@ -20,7 +20,7 @@
     <script>
       var myApp = angular.module('myApp',[]);
 
-      myApp.controller('TestCtrl', ['$scope', function($scope) {
+      myApp.controller('TestCtrl', function($scope) {
         var fruits = [
           {
             name: 'banana',
@@ -37,7 +37,7 @@
         ];
 
         $scope.fruits = fruits;
-      }]);
+      });
     </script>
   </body>
 </html>
