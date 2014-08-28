@@ -115,7 +115,7 @@ Notice the use of built-in angular directives such as `ng-hide`, `ng-show`, `ng-
 
 > Code check: [06-first-directive](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/06-first-directive)
 
-__Note:__ To run this Code check you'll need to:
+###### Note: To run this Code check you'll need to:
 - Make sure you've downloaded the code. Do this by going [here](https://github.com/Thinkful/guide-intro-to-angular/tree/clean) and either cloning the repo or clicking "Download Zip".
 - In your terminal, navigate to the project folder (e.g. `/Users/carl/Downloads/guide-intro-to-angular/app/06-first-directive`)
 - Run a simple local server. On a Mac, you can do this by running `python -m SimpleHTTPServer`. If you're on windows, try doing this by installing [Mongoose](https://code.google.com/p/mongoose/).
