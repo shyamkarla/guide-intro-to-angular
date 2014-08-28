@@ -8,7 +8,7 @@ Let's talk a little more about the View file's we've been using. You may have no
 <!-- currency filter applied to a multiplication of 2 numbers -->
 <div class="total-info">{{ cost * quantity | currency }}</div>
 <!-- Using a ternary expression inside the expression -->
-<div class="budget">{{ ( total > budget ) ? "Too Expensive" : "You can buy it!" }}
+<div class="budget">{{ ( total > budget ) ? "Too Expensive" : "You can buy it!" }}</div>
 ```
 
 Angular will *interpolate* these expressions: above we have made use of 3 little examples of how powerful expressions are.
