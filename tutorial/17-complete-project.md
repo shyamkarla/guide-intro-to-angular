@@ -6,14 +6,14 @@ Now you can finally download the complete project. It demonstrates all the key f
 
 We've made a bunch of changes to the project to give it a more complete feel, here's a list of what we did:
 
-1. We added a new route for specific Email messages that accepts an `:id` parameter.
+1. We added a new route for specific Email messages that accepts an `:id` parameter
 2. We added some slick CSS styles :)
-3. We changed our controllers to all make use of the 'Controller As' syntax.
-4. We added the ngSanitize library to use the `ng-bind-html` directive in the Email directive.
-5. We uncommented the goToMessage method in our Inbox Factory that will navigate to the new route.
+3. We changed our controllers to all make use of the 'Controller As' syntax
+4. We added the ngSanitize library to use the `ng-bind-html` directive in the Email directive
+5. We uncommented the goToMessage method in our Inbox Factory that will navigate to the new route
 6. We simplified our controllers further so they now only use the title on 'this' (Controller As)
 7. We added the Email Controller and view
-8. We added the Email Factory which adds a bunch of factory and JavaScript alerts where server communication would be appropriate.
+8. We added the Email Factory which adds a bunch of factory and JavaScript alerts where server communication would be appropriate
 9. We added the Email Directive and its template as well as using it in our Email View
 10. We added new JSON files for each of the messages
 11. We added the ng-cloak, however it isn't used in this application as ngView covers this for us :)
