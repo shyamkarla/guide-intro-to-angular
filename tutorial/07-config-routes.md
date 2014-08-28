@@ -29,4 +29,4 @@ The first view will be injected at /inbox, and the second will be inbox/email/:i
 
 If you look closely, you'll notice each view has a particular Controller. Later versions of Angular (we're using one of the latest) ship with a new Controller syntax, the "Controller as" syntax, which instantiates the Controller like an Object and binds it to the current scope under a namespace. The namespace I've chosen for `InboxCtrl` is `inbox`.
 
-__Note:__ You can also declare "Controller as" in-line. It'd look like this: `ng-controller="InboxCtrl as inbox"`.
+###### Note: You can also declare "Controller as" in-line. It'd look like this: `ng-controller="InboxCtrl as inbox"`.
