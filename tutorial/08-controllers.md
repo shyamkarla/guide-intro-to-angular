@@ -2,7 +2,7 @@
 
 Controllers are the middleman between the Model and the View, they _drive_ the Model and View changes. Imagine that the controller is given some html from the route and a javascript object from the dependency injection; with these two things, the controller will tell the view (the html) what it can do by giving it scope variables and maybe a few functions.
 
-Let's look at what a Controller looks like.
+Let's take a peerk at what a Controller looks like.
 
 A good Controller will have as little logic in it as possible, and should only be used for two things: Binding the Model to the View (initializing the View) and adding helper functions to the View.
 
