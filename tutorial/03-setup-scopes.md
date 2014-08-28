@@ -61,7 +61,7 @@ We'll explain what `{{title}}` and `ng-model="title"` is in a minute.
 </script>
 ```
 
-See how the function name is the same as the `ng-controller`s value?  Angular will be looking for a function with this name in our JavaScript so that it can act as a Controller.  Nifty stuff!
+See how the function name is the same as the `ng-controller's` value?  Angular will be looking for a function with this name in our JavaScript so that it can act as a Controller.  Nifty stuff!
 
 Below's the final version:
 
