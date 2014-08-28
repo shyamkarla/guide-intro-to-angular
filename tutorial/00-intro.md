@@ -7,6 +7,7 @@ Topics covered:
 - Single page applications (SPA)
 - Client-side MVC patterns
 - Two way data-binding
+- Routing with templates
 - AngularJS building blocks
     - Directives
     - Factories
