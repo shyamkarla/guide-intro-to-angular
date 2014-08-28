@@ -41,11 +41,13 @@ app.factory('InboxFactory', function InboxFactory ($http) {
 
 This will use $http to make a GET request to our "json/emails.json" file; here we also set a default error handler for the http request by chaining a method onto the [promise](http://spring.io/understanding/javascript-promises) returned by `$http.get()`.  Yes that's right, `$http()` returns a promise! So we can use all of the [Angular promise API](https://docs.angularjs.org/api/ng/service/$q), the same as we would use a `$q.defer().promise` object, with a few extras: namely `error(fn)` and `success(fn)`.  `success(fn)` and `error(fn)` are two "sugar" methods that are very similar to `then(fn)` and `catch(fn)` but specific to `$http`.
 
+###### Note: What are "sugar" methods? In simple terms. Syntactic sugars are a feature in a programming language that lets you express an idea in a more convenient way.
+
 You can view [Angular's $http documentation here](https://docs.angularjs.org/api/ng/service/$http).
 
 > Code check: [04-inbox-factory](https://github.com/Thinkful/guide-intro-to-angular/tree/master/clean/04-inbox-factory)
 
-__Note:__ To run this Code check you'll need to:
+###### Note: To run this Code check you'll need to:
 - Make sure you've downloaded the code. Do this by going [here](https://github.com/Thinkful/guide-intro-to-angular/tree/clean) and either cloning the repo or clicking "Download Zip".
 - In your terminal, navigate to the project folder (e.g. `/Users/carl/Downloads/guide-intro-to-angular/app/04-inbox-factory`)
 - Run a simple local server. On a Mac, you can do this by running `python -m SimpleHTTPServer`. If you're on windows, try doing this by installing [Mongoose](https://code.google.com/p/mongoose/).
