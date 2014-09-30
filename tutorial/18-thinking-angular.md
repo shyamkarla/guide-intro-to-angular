@@ -32,9 +32,9 @@ You can read more about [two-way databinding here](https://docs.angularjs.org/gu
 ## About Thinkful's Intermediate Frontend in AngularJS Course
 
 Thinkful offers a complete AngularJS course which takes you from novice to whiz. Our project-based curriculum was designed by Google's Angular expert, Matias Niemela and, throughout the course, you build eight awesome projects including:
-- An analytics dashboard
-- An Instagram search tool
-- An e-commerce site with Stripe integration (to accept payments)
-- A capstone project
+- A custom calendar
+- A signup form
+- A multipage application for gathering country information using a third party API
+- A URL shortening application
 
 Interested in learning more? Head over to [Thinkful.com](http://www.thinkful.com/) and select the AngularJS course.
